@@ -15,7 +15,7 @@ Allow BTBB to handle the business, while you focus on being the next Gordon Rams
 
 BTBB supports Home Chefs who seek to **venture into the home-based F&B business**, but are deterred by the complexity of business management.
 
-With BTBB, you can track **logistics** and receive valuable **data visualizations**, via a **user-friendly** command line interface (CLI).
+With BTBB, you can **track logistics** and receive valuable **data visualizations** via a **user-friendly** command line interface (CLI).
 BTBB consolidates all the data in one place, and even comes with a Graphical User Interface (GUI) to easily view
 and manoeuvre through client, ingredient, order and recipe details.
 
@@ -631,7 +631,7 @@ All possible formats:
 **Client details** include client name, phone and address, they must be provided in one of these ways:
 * If `c/CLIENT_INDEX` is provided (Format 2 and 4),
   * client details are copied from the client bookmark at the given index to the order.
-  * If `cn/`, `cp/` or `ca/` are provided with `c/`, client details are taken from `cn/`, `cp/` or `ca/` instead.
+  * If `cn/`, `cp/` or `ca/` are provided with `c/`, the respective client detail is taken from `cn/`, `cp/` or `ca/` instead.
 * If `c/CLIENT_INDEX` is not provided (Format 1 and 3),
   * `cn/`, `cp/` and `ca/` must be provided.
 
@@ -639,7 +639,7 @@ All possible formats:
 * If `r/RECIPE_INDEX` is provided (Format 3 and 4),
   * recipe details are copied from the recipe bookmark at the given index to the order.
   * `ORDER_PRICE` is calculated by multiplying the copied `RECIPE_PRICE` with `QUANTITY` of the order.
-  * If `rn/`, `ri/` or `op/` is provided with `r/`, details are taken from `rn/`, `ri/` or `op/` instead.
+  * If `rn/`, `ri/` or `op/` is provided with `r/`, the respective recipe detail is taken from `rn/`, `ri/` or `op/` instead.
 * If `r/` is not provided (Format 1 and 2),
   * `rn/` and `op/` must be provided.
 
